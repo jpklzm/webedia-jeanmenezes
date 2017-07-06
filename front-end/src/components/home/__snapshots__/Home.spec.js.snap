@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot 1`] = `
+<div
+  className="container"
+>
+  <h1>
+    Um site do webedia group
+  </h1>
+</div>
+`;
