@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot 1`] = `
+<nav
+  className="navbar navbar-default"
+  role="navigation"
+>
+  <div
+    className="container"
+  >
+    <ul
+      className="nav nav-justified"
+    >
+      <li>
+        <a
+          href="#"
+        >
+          Link
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Link
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Link
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Link
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Link
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Link
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Link
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Link
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Link
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Link
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+`;

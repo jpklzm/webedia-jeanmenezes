@@ -6,6 +6,7 @@ import Routes from './components/routes/Routes';
 
 import './reset.css';
 import './grid.css';
+import './navbar.css';
 import './index.css';
 
 OfflinePluginRuntime.install();
