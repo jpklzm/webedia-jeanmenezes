@@ -1,22 +1,47 @@
-.card {
+.featuredCard {
   background-color: #f8f8f8;
-  width: 80%;
+  width: 98%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.container {
+.card {
+  background-color: #f8f8f8;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featuredContainer {
   padding: 1px 20px;
 }
 
-.image {
+.container {
+  margin: 25px 20px;
+  padding: 20px;
+}
+
+.featuredImage {
   width: 100%;
+}
+
+.image {
+  left: -30px;
+  position: relative;
+  width: 115%;
+}
+
+.featuredTitle {
+  color: #fe783b;
+  text-transform: uppercase;
 }
 
 .title {
   color: #fe783b;
   text-transform: uppercase;
+  font-size: 1.2em;
 }
 
 .subTitle {
@@ -25,4 +50,5 @@
 
 .contentArea {
   text-align: center;
+  padding-bottom: 20px;
 }

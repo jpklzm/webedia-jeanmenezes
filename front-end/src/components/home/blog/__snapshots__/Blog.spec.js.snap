@@ -3,18 +3,23 @@
 exports[`Snapshot 1`] = `
 <section
   className="container"
+  style={
+    Object {
+      "width": "80%",
+    }
+  }
 >
   <div
     className="row"
   >
     <div
-      className="card"
+      className="featuredCard"
     >
       <div
-        className="container"
+        className="featuredContainer"
       >
         <h1
-          className="title"
+          className="featuredTitle"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus ligula ut sollicitudin imperdiet.
         </h1>
@@ -22,7 +27,7 @@ exports[`Snapshot 1`] = `
           Aenean et dui molestie, bibendum ipsum id, lobortis ex. Maecenas fringilla leo nibh, vitae placerat leo malesuada sed. Cras pharetra urna vel turpis aliquam aliquet.
         </h2>
         <img
-          className="image"
+          className="featuredImage"
           src="http://www.fragil.org/wp-content/themes/courage/assets/images/placeholder_featured_image.svg"
         />
         <div
@@ -36,6 +41,52 @@ exports[`Snapshot 1`] = `
           <p>
             Integer felis ipsum, feugiat eget sagittis id, iaculis ut est. Morbi tristique mollis nulla sed eleifend. Aliquam pulvinar sem non dui volutpat imperdiet. Nullam fermentum, arcu non laoreet varius, mi mauris vulputate erat, vitae pharetra sapien augue sit amet ante. Donec vel condimentum libero, at pulvinar diam. Proin sed justo velit. Praesent tellus purus, congue tincidunt sapien ut, venenatis pharetra ligula.
           </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm-6"
+    >
+      <div
+        className="card"
+      >
+        <div
+          className="container"
+        >
+          <h1
+            className="title"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus ligula ut sollicitudin imperdiet.
+          </h1>
+          <img
+            className="image"
+            src="http://www.fragil.org/wp-content/themes/courage/assets/images/placeholder_featured_image.svg"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-sm-6"
+    >
+      <div
+        className="card"
+      >
+        <div
+          className="container"
+        >
+          <h1
+            className="title"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus ligula ut sollicitudin imperdiet.
+          </h1>
+          <img
+            className="image"
+            src="http://www.fragil.org/wp-content/themes/courage/assets/images/placeholder_featured_image.svg"
+          />
         </div>
       </div>
     </div>

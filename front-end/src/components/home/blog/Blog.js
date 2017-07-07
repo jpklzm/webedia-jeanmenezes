@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Post } from './post/Post';
+import { FeaturedPost, Post } from './post/Post';
 
 // import styles from './styles.scss';
 
@@ -15,8 +15,12 @@ const postMock = {
 class Blog extends Component {
   render() {
     return (
-      <section className="container">
+      <section className="container" style={{width: "80%"}}>
         <div className="row">
+          <FeaturedPost post={postMock} />
+        </div>
+        <div className="row">
+          <Post post={postMock} />
           <Post post={postMock} />
         </div>
       </section>

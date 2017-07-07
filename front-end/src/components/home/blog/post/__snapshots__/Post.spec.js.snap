@@ -2,34 +2,23 @@
 
 exports[`Snapshot 1`] = `
 <div
-  className="card"
+  className="col-sm-6"
 >
   <div
-    className="container"
+    className="card"
   >
-    <h1
-      className="title"
-    >
-      title
-    </h1>
-    <h2>
-      description
-    </h2>
-    <img
-      className="image"
-      src="http://www.fragil.org/wp-content/themes/courage/assets/images/placeholder_featured_image.svg"
-    />
     <div
-      className="contentArea"
+      className="container"
     >
       <h1
-        className="subTitle"
+        className="title"
       >
-        subTitle
+        title
       </h1>
-      <p>
-        content
-      </p>
+      <img
+        className="image"
+        src="http://www.fragil.org/wp-content/themes/courage/assets/images/placeholder_featured_image.svg"
+      />
     </div>
   </div>
 </div>
