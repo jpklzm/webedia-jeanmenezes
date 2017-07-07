@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot 1`] = `
+<section
+  className="container"
+>
+  <div
+    className="card"
+  >
+    <h1>
+      title
+    </h1>
+    <h2>
+      description
+    </h2>
+    <img
+      src="http://www.fragil.org/wp-content/themes/courage/assets/images/placeholder_featured_image.svg"
+    />
+    <h1>
+      subTitle
+    </h1>
+    <p>
+      content
+    </p>
+  </div>
+</section>
+`;
