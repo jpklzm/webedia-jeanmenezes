@@ -11,74 +11,104 @@ exports[`Snapshot 1`] = `
     <ul
       className="nav nav-justified"
     >
-      <li>
+      <li
+        className="menuItem"
+      >
         <a
+          className="menuText"
           href="#"
         >
-          Link
+          Lorem Ipsum
         </a>
       </li>
-      <li>
+      <li
+        className="menuItem"
+      >
         <a
+          className="menuText"
           href="#"
         >
-          Link
+          Lorem Ipsum
         </a>
       </li>
-      <li>
+      <li
+        className="menuItem"
+      >
         <a
+          className="menuText"
           href="#"
         >
-          Link
+          Lorem Ipsum
         </a>
       </li>
-      <li>
+      <li
+        className="menuItem"
+      >
         <a
+          className="menuText"
           href="#"
         >
-          Link
+          Lorem Ipsum
         </a>
       </li>
-      <li>
+      <li
+        className="menuItem"
+      >
         <a
+          className="menuText"
           href="#"
         >
-          Link
+          Lorem Ipsum
         </a>
       </li>
-      <li>
+      <li
+        className="menuItem"
+      >
         <a
+          className="menuText"
           href="#"
         >
-          Link
+          Lorem Ipsum
         </a>
       </li>
-      <li>
+      <li
+        className="menuItem"
+      >
         <a
+          className="menuText"
           href="#"
         >
-          Link
+          Lorem Ipsum
         </a>
       </li>
-      <li>
+      <li
+        className="menuItem"
+      >
         <a
+          className="menuText"
           href="#"
         >
-          Link
+          Lorem Ipsum
         </a>
       </li>
-      <li>
+      <li
+        className="menuItem"
+      >
         <a
+          className="menuText"
           href="#"
         >
-          Link
+          Lorem Ipsum
         </a>
       </li>
-      <li>
+      <li
+        className="menuItem"
+      >
         <a
+          className="menuText"
           href="#"
         >
-          Link
+          Lorem Ipsum
         </a>
       </li>
     </ul>
