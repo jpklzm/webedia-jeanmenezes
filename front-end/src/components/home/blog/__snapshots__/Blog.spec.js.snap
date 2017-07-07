@@ -28,7 +28,7 @@ exports[`Snapshot 1`] = `
         </h2>
         <img
           className="featuredImage"
-          src="http://www.fragil.org/wp-content/themes/courage/assets/images/placeholder_featured_image.svg"
+          src="http://p8.storage.canalblog.com/88/05/1209379/103115257_o.jpg"
         />
         <div
           className="contentArea"
@@ -64,7 +64,7 @@ exports[`Snapshot 1`] = `
           </h1>
           <img
             className="image"
-            src="http://www.fragil.org/wp-content/themes/courage/assets/images/placeholder_featured_image.svg"
+            src="http://p8.storage.canalblog.com/88/05/1209379/103115257_o.jpg"
           />
         </div>
       </div>
@@ -85,7 +85,7 @@ exports[`Snapshot 1`] = `
           </h1>
           <img
             className="image"
-            src="http://www.fragil.org/wp-content/themes/courage/assets/images/placeholder_featured_image.svg"
+            src="http://p8.storage.canalblog.com/88/05/1209379/103115257_o.jpg"
           />
         </div>
       </div>
