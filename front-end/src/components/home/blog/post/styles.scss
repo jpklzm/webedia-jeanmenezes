@@ -1,10 +1,28 @@
-.menuItem {
-  padding: 18px 9px;
+.card {
+  background-color: #f8f8f8;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.menuText {
-  font-size: 12px;
-  width: 120%;
-  color: #7d7d7d;
+.container {
+  padding: 1px 20px;
+}
+
+.image {
+  width: 100%;
+}
+
+.title {
+  color: #fe783b;
   text-transform: uppercase;
+}
+
+.subTitle {
+  color: #fe783b;
+}
+
+.contentArea {
+  text-align: center;
 }
