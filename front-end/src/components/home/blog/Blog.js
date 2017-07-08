@@ -43,11 +43,16 @@ class Blog extends Component {
     return (
       <section className="container" style={{ width: '80%' }}>
         <div className="row">
-          {this.state.posts[0] ? <FeaturedPost post={this.state.posts[0]} /> : null}
+          {this.state.posts[this.state.posts.length - 1]
+            ? <FeaturedPost post={this.state.posts[this.state.posts.length - 1]} />
+            : null}
         </div>
         <div className="row">
-          {this.state.posts[1] ? <Post post={this.state.posts[1]} /> : null}
-          {this.state.posts[2] ? <Post post={this.state.posts[2]} /> : null}
+          {this.state.posts.filter(p => p !== this.state.posts[this.state.posts.length - 1]).map((post, key) => (
+            <div key={key}>
+              <Post post={post} />
+            </div>
+          ))}
         </div>
       </section>
     );
