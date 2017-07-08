@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import { get } from '../../../services/post';
 import { FeaturedPost, Post } from './post/Post';
 
 // import styles from './styles.scss';
@@ -13,15 +14,40 @@ const postMock = {
 };
 
 class Blog extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      loading: false,
+      posts: [],
+      shouldLoadMorePosts: true,
+    };
+
+    this.getPosts = this.getPosts.bind(this);
+  }
+
+  componentDidMount() {
+    this.getPosts();
+  }
+
+  getPosts() {
+    get().then(response => {
+      this.setState({
+        posts: this.state.posts.concat(response.data),
+        loading: false,
+      });
+    });
+  }
+
   render() {
     return (
       <section className="container" style={{ width: '80%' }}>
         <div className="row">
-          <FeaturedPost post={postMock} />
+          {this.state.posts[0] ? <FeaturedPost post={this.state.posts[0]} /> : null}
         </div>
         <div className="row">
-          <Post post={postMock} />
-          <Post post={postMock} />
+          {this.state.posts[1] ? <Post post={this.state.posts[1]} /> : null}
+          {this.state.posts[2] ? <Post post={this.state.posts[2]} /> : null}
         </div>
       </section>
     );
