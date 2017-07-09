@@ -8,7 +8,7 @@ export const FeaturedPost = ({ post }) => {
     <div className={styles.featuredCard}>
       <div className={styles.featuredContainer}>
         <h1 className={styles.featuredTitle}>{post.title}</h1>
-        <h2>{post.description}</h2>
+        <h2 className={styles.description}>{post.description}</h2>
         <img src={post.imageUrl} className={styles.featuredImage} />
         <div className={styles.contentArea}>
           <h1 className={styles.subTitle}>{post.subTitle}</h1>
