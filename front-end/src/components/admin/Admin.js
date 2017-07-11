@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Menu from '../home/menu/Menu';
-import Create from './create/Create'
+import Create from './create/Create';
 
 import styles from './styles.scss';
 
