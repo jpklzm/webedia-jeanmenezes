@@ -11,6 +11,7 @@ export const FeaturedPost = ({ post }) => {
         <h2 className={styles.description}>{post.description}</h2>
         <img src={post.imageUrl} className={styles.featuredImage} />
         <div className={styles.contentArea}>
+          <hr className={styles.hr} />
           <h1 className={styles.subTitle}>{post.subTitle}</h1>
           <p>{post.content}</p>
         </div>
