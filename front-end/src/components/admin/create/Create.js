@@ -9,6 +9,7 @@ class Create extends Component {
     super();
     this.state = {
       data: {},
+      status: null,
     };
 
     this.onSubmit = this.onSubmit.bind(this);
@@ -16,7 +17,9 @@ class Create extends Component {
 
   componentDidUpdate() {
     if (this.state.data !== '') {
-      post(this.state.data);
+      post(this.state.data).then(response => {
+        this.setState({ status: response.data });
+      });
       this.setState({ data: '' });
     }
   }
@@ -85,6 +88,11 @@ class Create extends Component {
               onSubmit={this.value === ''}
             />
           </div>
+          {this.state.status
+            ? <div className={styles.alert}>
+                <strong>Yay!</strong> Post criado com sucesso!
+              </div>
+            : null}
           <button type="submit" className={styles.button}>
             Criar Post
           </button>
