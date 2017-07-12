@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import styles from './styles.scss';
 
 export const FeaturedPost = ({ post }) => {
+  // Fullsized post with all data.
   return (
     <a href="#">
       <div className={styles.featuredCard}>
@@ -23,6 +24,7 @@ export const FeaturedPost = ({ post }) => {
 };
 
 export const Post = ({ post }) => {
+  // Small post with reduced data for two columns layout
   return (
     <div className="col-sm-6">
       <a href="#">

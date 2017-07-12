@@ -3,6 +3,9 @@ import { push as Menu } from 'react-burger-menu';
 import { Link } from 'react-router-dom';
 import styles from './styles.scss';
 
+// Mobile Menu
+
+// Necessary style json for third-party component
 const menuStyles = {
   bmBurgerButton: {
     position: 'absolute',

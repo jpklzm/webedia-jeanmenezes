@@ -37,7 +37,7 @@ class Blog extends Component {
             ? <FeaturedPost post={this.state.posts[this.state.posts.length - 1]} />
             : null}
         </article>
-        {window.innerWidth >= 880
+        {window.innerWidth >= 880 // Desktop view with two columns of small posts
           ? <div className="row">
               {this.state.posts.filter(p => p !== this.state.posts[this.state.posts.length - 1]).map((post, key) => (
                 <article key={key}>
@@ -45,7 +45,8 @@ class Blog extends Component {
                 </article>
               ))}
             </div>
-          : <div className="row">
+          : // Mobile view with single column and fullsized posts
+            <div className="row">
               {this.state.posts.filter(p => p !== this.state.posts[this.state.posts.length - 1]).map((post, key) => (
                 <article key={key}>
                   <FeaturedPost post={post} />

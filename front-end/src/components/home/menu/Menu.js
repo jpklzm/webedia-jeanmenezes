@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 import styles from './styles.scss';
 
+// Desktop Menu
+
 class Menu extends Component {
   render() {
     return (
