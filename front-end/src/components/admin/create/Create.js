@@ -37,58 +37,55 @@ class Create extends Component {
   render() {
     return (
       <div className={styles.container}>
+        <h1> Criar post </h1>
         <form onSubmit={this.onSubmit}>
-          <label className={styles.label}> Título </label>
           <div>
             <input
               type="text"
               ref={e => (this.titleField = e)}
               className={styles.input}
-              placeholder=""
+              placeholder="Título"
               onSubmit={this.value === ''}
             />
           </div>
-          <label className={styles.label}> Subtítulo </label>
           <div>
             <input
               type="text"
               ref={e => (this.subtitleField = e)}
               className={styles.input}
-              placeholder=""
+              placeholder="Subtítulo"
               onSubmit={this.value === ''}
             />
           </div>
-          <label className={styles.label}> Descrição </label>
           <div>
             <input
               type="text"
               ref={e => (this.descriptionField = e)}
               className={styles.input}
-              placeholder=""
+              placeholder="Descrição"
               onSubmit={this.value === ''}
             />
           </div>
-          <label className={styles.label}> Conteúdo </label>
           <div>
-            <input
+            <textarea
+              rows="5"
               type="text"
               ref={e => (this.contentField = e)}
-              className={styles.input}
-              placeholder=""
+              className={styles.textarea}
+              placeholder="Conteúdo"
               onSubmit={this.value === ''}
             />
           </div>
-          <label className={styles.label}> URL da Imagem </label>
           <div>
             <input
               type="url"
               ref={e => (this.imageUrlField = e)}
               className={styles.input}
-              placeholder=""
+              placeholder="URL da Imagem"
               onSubmit={this.value === ''}
             />
           </div>
-          <button type="submit" className={styles.btn}>
+          <button type="submit" className={styles.button}>
             Criar Post
           </button>
         </form>

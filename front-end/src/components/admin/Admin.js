@@ -15,7 +15,9 @@ const Home = () => (
         <span className={styles.logo}> <strong>web</strong>edia</span><span className={styles.tm}>™</span> group
       </h1>
       {window.innerWidth >= 880 ? <Menu /> : null}
-      <Create />
+      <div className="container">
+        <Create />
+      </div>
     </div>
   </div>
 );
