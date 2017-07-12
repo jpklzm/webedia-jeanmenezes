@@ -47,13 +47,21 @@ class Blog extends Component {
             ? <FeaturedPost post={this.state.posts[this.state.posts.length - 1]} />
             : null}
         </div>
-        <div className="row">
-          {this.state.posts.filter(p => p !== this.state.posts[this.state.posts.length - 1]).map((post, key) => (
-            <div key={key}>
-              <Post post={post} />
+        {window.innerWidth >= 880
+          ? <div className="row">
+              {this.state.posts.filter(p => p !== this.state.posts[this.state.posts.length - 1]).map((post, key) => (
+                <div key={key}>
+                  <Post post={post} />
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          : <div className="row">
+              {this.state.posts.filter(p => p !== this.state.posts[this.state.posts.length - 1]).map((post, key) => (
+                <div key={key}>
+                  <FeaturedPost post={post} />
+                </div>
+              ))}
+            </div>}
       </section>
     );
   }
