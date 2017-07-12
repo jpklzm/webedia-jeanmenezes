@@ -32,24 +32,24 @@ class Blog extends Component {
   render() {
     return (
       <section className="container" style={{ width: '80%' }}>
-        <div className="row">
+        <article className="row">
           {this.state.posts[this.state.posts.length - 1]
             ? <FeaturedPost post={this.state.posts[this.state.posts.length - 1]} />
             : null}
-        </div>
+        </article>
         {window.innerWidth >= 880
           ? <div className="row">
               {this.state.posts.filter(p => p !== this.state.posts[this.state.posts.length - 1]).map((post, key) => (
-                <div key={key}>
+                <article key={key}>
                   <Post post={post} />
-                </div>
+                </article>
               ))}
             </div>
           : <div className="row">
               {this.state.posts.filter(p => p !== this.state.posts[this.state.posts.length - 1]).map((post, key) => (
-                <div key={key}>
+                <article key={key}>
                   <FeaturedPost post={post} />
-                </div>
+                </article>
               ))}
             </div>}
       </section>
