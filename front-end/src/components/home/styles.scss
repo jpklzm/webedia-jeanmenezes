@@ -2,6 +2,73 @@
   background-color: #f0f0f0;
 }
 
+@media all and (min-width: 960px) {
+  .h1 {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+    font-weight: 300;
+  }
+
+  .tm{
+    font-size: 15px;
+    position: relative;
+    bottom: 13px;
+  }
+
+  .logo {
+    font-size: 50px;
+    font-weight: 300;
+    position: relative;
+    top: 4px;
+  }
+}
+
+@media all and (max-width: 959px) and (min-width: 600px) {
+  .h1 {
+    font-size: 2.8vw;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+    font-weight: 300;
+  }
+
+  .tm{
+    font-size: 15px;
+    position: relative;
+    bottom: 13px;
+  }
+
+  .logo {
+    font-weight: 300;
+    position: relative;
+    top: 4px;
+  }
+}
+
+@media all and (max-width: 599px) and (min-width: 50px) {
+  .h1 {
+    font-size: 0vw;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+    font-weight: 300;
+  }
+
+  .tm{
+    display: none;
+  }
+
+  .logo {
+    float:right;
+    margin: 12px;
+    font-size: 50px;
+    font-weight: 300;
+    position: relative;
+    top: 4px;
+  }
+}
+
 .h1 {
   text-align: center;
   vertical-align: middle;
