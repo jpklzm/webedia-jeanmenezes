@@ -7,7 +7,7 @@ class Menu extends Component {
   render() {
     return (
       <nav className="navbar navbar-default" role="navigation">
-        <div className="container">
+        <div className={window.innerWidth >= 992 ? 'container' : styles.container}>
           <ul className="nav nav-justified">
             <li className={styles.menuItem}><Link to="/" className={styles.menuText}>Home</Link></li>
             <li className={styles.menuItem}><a href="#" className={styles.menuText}>Lorem Ipsum</a></li>
