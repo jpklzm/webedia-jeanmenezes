@@ -142,21 +142,68 @@ exports[`Snapshot 1`] = `
         </ul>
       </div>
     </nav>
-    <section
+    <div
       className="container"
-      style={
-        Object {
-          "width": "80%",
-        }
-      }
     >
       <div
-        className="row"
-      />
-      <div
-        className="row"
-      />
-    </section>
+        className="container"
+      >
+        <h1>
+           Criar post 
+        </h1>
+        <form
+          onSubmit={[Function]}
+        >
+          <div>
+            <input
+              className="input"
+              onSubmit={false}
+              placeholder="Título"
+              type="text"
+            />
+          </div>
+          <div>
+            <input
+              className="input"
+              onSubmit={false}
+              placeholder="Subtítulo"
+              type="text"
+            />
+          </div>
+          <div>
+            <input
+              className="input"
+              onSubmit={false}
+              placeholder="Descrição"
+              type="text"
+            />
+          </div>
+          <div>
+            <textarea
+              className="textarea"
+              onSubmit={false}
+              placeholder="Conteúdo"
+              rows="5"
+              type="text"
+            />
+          </div>
+          <div>
+            <input
+              className="input"
+              onSubmit={false}
+              placeholder="URL da Imagem"
+              type="url"
+            />
+          </div>
+          <button
+            className="button"
+            type="submit"
+          >
+            Criar Post
+          </button>
+        </form>
+      </div>
+    </div>
   </div>
 </div>
 `;

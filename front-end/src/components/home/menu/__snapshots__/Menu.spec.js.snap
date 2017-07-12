@@ -16,9 +16,10 @@ exports[`Snapshot 1`] = `
       >
         <a
           className="menuText"
-          href="#"
+          href="/"
+          onClick={[Function]}
         >
-          Lorem Ipsum
+          Home
         </a>
       </li>
       <li
@@ -106,9 +107,10 @@ exports[`Snapshot 1`] = `
       >
         <a
           className="menuText"
-          href="#"
+          href="/admin"
+          onClick={[Function]}
         >
-          Lorem Ipsum
+          Admin
         </a>
       </li>
     </ul>

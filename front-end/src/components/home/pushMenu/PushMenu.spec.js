@@ -1,12 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router-dom';
-import Home from './Home';
+import PushMenu from './PushMenu';
 
 test('Snapshot', () => {
   const component = renderer.create(
     <MemoryRouter>
-      <Home />
+      <PushMenu />
     </MemoryRouter>
   );
   let tree = component.toJSON();
