@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router';
 
 import { post } from '../../../services/post';
 
@@ -10,6 +11,7 @@ class Create extends Component {
     this.state = {
       data: {},
       status: null,
+      fireRedirect: false,
     };
 
     this.onSubmit = this.onSubmit.bind(this);
@@ -18,7 +20,7 @@ class Create extends Component {
   componentDidUpdate() {
     if (this.state.data !== '') {
       post(this.state.data).then(response => {
-        this.setState({ status: response.data });
+        this.setState({ fireRedirect: true });
       });
       this.setState({ data: '' });
     }
@@ -38,6 +40,8 @@ class Create extends Component {
   }
 
   render() {
+    const { fireRedirect } = this.state;
+
     return (
       <div className={styles.container}>
         <h1> Criar post </h1>
@@ -97,6 +101,7 @@ class Create extends Component {
             Criar Post
           </button>
         </form>
+        {fireRedirect && <Redirect to={'/'} />}
       </div>
     );
   }
