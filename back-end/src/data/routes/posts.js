@@ -12,6 +12,16 @@ router.route('/posts/:page')
   });
 })
 
+router.route('/posts/')
+.get(function(req, res) {
+  Post.find().sort('-created_at').find(function(err, posts) {
+    if (err) {
+      return res.send(err);
+    }
+    res.json(posts);
+  });
+})
+
 .post(function(req, res) {
   var post = new Post(req.body);
 

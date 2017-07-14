@@ -7,7 +7,7 @@ const postSchema = new Schema({
     description: { type: String },
     imageUrl: { type: String },
   	content: { type: String },
-    created_at    : { type: Date, required: true, default: Date.now }
+    created_at: { type: Date, required: true, default: Date.now }
 });
 
 export const Post = mongoose.model('Post', postSchema);
