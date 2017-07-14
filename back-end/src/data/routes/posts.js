@@ -2,13 +2,12 @@ import express from 'express';
 import Post from '../../models/post';
 const router = express.Router();
 
-router.route('/posts')
+router.route('/posts/:page')
 .get(function(req, res) {
-  Post.find().sort('-created_at').find(function(err, posts) {
+  Post.find().sort('-created_at').skip(5 * (req.params.page - 1)).limit(5).find(function(err, posts) {
     if (err) {
       return res.send(err);
     }
-
     res.json(posts);
   });
 })

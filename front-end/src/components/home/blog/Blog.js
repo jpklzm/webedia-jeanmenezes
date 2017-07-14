@@ -21,7 +21,7 @@ class Blog extends Component {
   }
 
   getPosts() {
-    get().then(response => {
+    get(1).then(response => {
       this.setState({
         posts: this.state.posts.concat(response.data),
         loading: false,
