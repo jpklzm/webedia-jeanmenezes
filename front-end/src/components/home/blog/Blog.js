@@ -42,6 +42,20 @@ class Blog extends Component {
   render() {
     return (
       <section className="container" style={{ width: '80%' }}>
+        {parseInt(this.props.page) > 1
+          ? <button
+              onClick={() => (window.location = 'http://localhost:4000/blog/page/' + (parseInt(this.props.page) - 1))}
+            >
+              Página Anterior
+            </button>
+          : null}
+        {this.state.posts.length === 5
+          ? <button
+              onClick={() => (window.location = 'http://localhost:4000/blog/page/' + (parseInt(this.props.page) + 1))}
+            >
+              Próxima página
+            </button>
+          : null}
         <article className="row">
           {this.state.posts[0] ? <FeaturedPost post={this.state.posts[0]} /> : null}
         </article>
