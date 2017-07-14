@@ -7,7 +7,7 @@ import styles from './styles.scss';
 export const FeaturedPost = ({ post }) => {
   // Fullsized post with all data.
   return (
-    <Link to={'/blog/post/' + post._id} refresh="true">
+    <Link to={'/blog/post/' + post._id}>
       <div className={styles.featuredCard}>
         <div className={styles.featuredContainer}>
           <h1 className={styles.featuredTitle}>{post.title}</h1>
@@ -28,7 +28,7 @@ export const Post = ({ post }) => {
   // Small post with reduced data for two columns layout
   return (
     <div className="col-sm-6">
-      <Link to={'/blog/post/' + post._id} refresh="true">
+      <Link to={'/blog/post/' + post._id}>
         <div className={styles.card}>
           <div className={styles.container}>
             <h1 className={styles.title}>{post.title}</h1>
