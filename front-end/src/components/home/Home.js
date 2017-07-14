@@ -11,9 +11,6 @@ class Home extends Component {
     super(props);
   }
 
-  componentDidMount() {
-  }
-
   render() {
     return (
       <div className={styles.container}>
@@ -28,7 +25,11 @@ class Home extends Component {
           {window.innerWidth >= 880 // Desktop menu
             ? <Menu />
             : null}
-          <Blog page={this.props.match.params.page && this.props.match.params.page >= 1 ? this.props.match.params.page : 1} />
+          <Blog
+            page={
+              this.props.match.params.page && this.props.match.params.page >= '1' ? this.props.match.params.page : 1
+            }
+          />
         </div>
       </div>
     );

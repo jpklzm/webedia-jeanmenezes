@@ -42,7 +42,7 @@ exports[`Snapshot 1`] = `
           >
             <a
               className="menuText"
-              href="/"
+              href="/blog/1"
               onClick={[Function]}
             >
               Home
