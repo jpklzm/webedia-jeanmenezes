@@ -12,6 +12,16 @@ router.route('/posts/:page')
   });
 })
 
+router.route('/posts/post/:postId')
+.get(function(req, res) {
+  Post.findOne({ _id: req.params.postId }, function(err, post) {
+    if (err) {
+      return res.send(err);
+    }
+    res.json(post);
+  });
+})
+
 router.route('/posts/')
 .get(function(req, res) {
   Post.find().sort('-created_at').find(function(err, posts) {

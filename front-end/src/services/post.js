@@ -6,6 +6,10 @@ export function get(page) {
   return axios.get(postsApi + page);
 }
 
+export function getOne(postId) {
+  return axios.get(postsApi + 'post/' + postId);
+}
+
 const config = {
   headers: {
     'Content-Type': 'application/json',

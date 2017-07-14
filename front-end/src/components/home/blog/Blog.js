@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { get } from '../../../services/post';
+import { get, getOne } from '../../../services/post';
 import { FeaturedPost, Post } from './post/Post';
 
 class Blog extends Component {
@@ -22,12 +22,21 @@ class Blog extends Component {
   }
 
   getPosts() {
-    get(this.props.page).then(response => {
-      this.setState({
-        posts: this.state.posts.concat(response.data),
-        loading: false,
+    if (this.props.postId) {
+      getOne(this.props.postId).then(response => {
+        this.setState({
+          posts: this.state.posts.concat(response.data),
+          loading: false,
+        });
       });
-    });
+    } else {
+      get(this.props.page).then(response => {
+        this.setState({
+          posts: this.state.posts.concat(response.data),
+          loading: false,
+        });
+      });
+    }
   }
 
   render() {
@@ -59,6 +68,7 @@ class Blog extends Component {
 
 Blog.propTypes = {
   page: PropTypes.string,
+  post: PropTypes.string,
 };
 
 export default Blog;
