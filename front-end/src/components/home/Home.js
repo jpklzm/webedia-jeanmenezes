@@ -29,9 +29,7 @@ class Home extends Component {
             page={
               this.props.match.params.page && this.props.match.params.page >= '1' ? this.props.match.params.page : 1
             }
-            postId={
-              this.props.match.params.postId ? this.props.match.params.postId : null
-            }
+            postId={this.props.match.params.postId ? this.props.match.params.postId : null}
           />
         </div>
       </div>
