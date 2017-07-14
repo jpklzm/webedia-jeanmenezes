@@ -33,13 +33,13 @@ class Blog extends Component {
     return (
       <section className="container" style={{ width: '80%' }}>
         <article className="row">
-          {this.state.posts[this.state.posts.length - 1]
-            ? <FeaturedPost post={this.state.posts[this.state.posts.length - 1]} />
+          {this.state.posts[0]
+            ? <FeaturedPost post={this.state.posts[0]} />
             : null}
         </article>
         {window.innerWidth >= 880 // Desktop view with two columns of small posts
           ? <div className="row">
-              {this.state.posts.filter(p => p !== this.state.posts[this.state.posts.length - 1]).map((post, key) => (
+              {this.state.posts.filter(p => p !== this.state.posts[0]).map((post, key) => (
                 <article key={key}>
                   <Post post={post} />
                 </article>
@@ -47,7 +47,7 @@ class Blog extends Component {
             </div>
           : // Mobile view with single column and fullsized posts
             <div className="row">
-              {this.state.posts.filter(p => p !== this.state.posts[this.state.posts.length - 1]).map((post, key) => (
+              {this.state.posts.filter(p => p !== this.state.posts[0]).map((post, key) => (
                 <article key={key}>
                   <FeaturedPost post={post} />
                 </article>
