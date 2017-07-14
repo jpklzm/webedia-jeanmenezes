@@ -33,9 +33,7 @@ class Blog extends Component {
     return (
       <section className="container" style={{ width: '80%' }}>
         <article className="row">
-          {this.state.posts[0]
-            ? <FeaturedPost post={this.state.posts[0]} />
-            : null}
+          {this.state.posts[0] ? <FeaturedPost post={this.state.posts[0]} /> : null}
         </article>
         {window.innerWidth >= 880 // Desktop view with two columns of small posts
           ? <div className="row">
