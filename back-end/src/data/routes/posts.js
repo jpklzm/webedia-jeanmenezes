@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.route('/posts')
 .get(function(req, res) {
-  Post.find(function(err, posts) {
+  Post.find().sort('-created_at').find(function(err, posts) {
     if (err) {
       return res.send(err);
     }
