@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import { get } from '../../../services/post';
 import { FeaturedPost, Post } from './post/Post';
@@ -21,7 +22,7 @@ class Blog extends Component {
   }
 
   getPosts() {
-    get(1).then(response => {
+    get(this.props.page).then(response => {
       this.setState({
         posts: this.state.posts.concat(response.data),
         loading: false,
@@ -55,5 +56,9 @@ class Blog extends Component {
     );
   }
 }
+
+Blog.propTypes = {
+  page: PropTypes.string,
+};
 
 export default Blog;
