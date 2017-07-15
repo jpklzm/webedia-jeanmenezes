@@ -15,14 +15,14 @@ const menuStyles = {
     top: '36px',
   },
   bmCrossButton: {
-    height: '24px',
-    width: '24px',
+    height: '63px',
+    width: '63px',
   },
   bmCross: {
-    background: '#bdc3c7',
+    background: '#fff',
   },
   bmMenu: {
-    background: '#f0f0f0',
+    background: '#fff',
     padding: '2.5em 1.5em 0',
     fontSize: '1.15em',
   },
@@ -34,14 +34,14 @@ const menuStyles = {
     padding: '0.8em',
   },
   bmOverlay: {
-    background: 'rgba(0, 0, 0, 0.3)',
+    // background: 'rgba(0, 0, 0, 0.3)',
   },
 };
 
 class PushMenu extends Component {
   render() {
     return (
-      <Menu styles={menuStyles} pageWrapId={'page-wrap'} customBurgerIcon={<img src="/src/assets/menu.svg" />}>
+      <Menu styles={menuStyles} pageWrapId={'page-wrap'} customBurgerIcon={<img src="/src/assets/menu.svg" />} customCrossIcon={<img src="/src/assets/back.svg" />} noOverlay>
         <Link to="/" className={styles.menuText}>Home</Link>
         <a href="#" className={styles.menuText}>Lorem Ipsum</a>
         <a href="#" className={styles.menuText}>Lorem Ipsum</a>
