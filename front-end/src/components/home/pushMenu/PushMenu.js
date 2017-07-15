@@ -41,7 +41,7 @@ const menuStyles = {
 class PushMenu extends Component {
   render() {
     return (
-      <Menu styles={menuStyles} pageWrapId={'page-wrap'} customBurgerIcon={<img src="./src/assets/menu.svg" />}>
+      <Menu styles={menuStyles} pageWrapId={'page-wrap'} customBurgerIcon={<img src="/src/assets/menu.svg" />}>
         <Link to="/" className={styles.menuText}>Home</Link>
         <a href="#" className={styles.menuText}>Lorem Ipsum</a>
         <a href="#" className={styles.menuText}>Lorem Ipsum</a>
